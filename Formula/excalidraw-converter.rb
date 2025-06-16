@@ -5,13 +5,13 @@
 class ExcalidrawConverter < Formula
   desc "A command line tool for porting Excalidraw diagrams to Gliffy."
   homepage "https://github.com/sindrel/excalidraw-converter"
-  version "1.5.1"
+  version "1.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.1/excalidraw-converter_1.5.1_darwin_amd64.tar.gz"
-      sha256 "0defdc396b3e4123d31468b3bf137703dc78259f4d33b7358a3d80c5d62e363a"
+      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.2/excalidraw-converter_1.5.2_darwin_amd64.tar.gz"
+      sha256 "ea8ab0afac43e5197e49936a24f371d2294febe46a124c261dfb119361547d3b"
 
       def install
         bin.install "exconv"
@@ -19,8 +19,8 @@ class ExcalidrawConverter < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.1/excalidraw-converter_1.5.1_darwin_arm64.tar.gz"
-      sha256 "11660f34a05de4217097948bc55e7f8c315bc832bff97ed99e8fe42e73ece8f8"
+      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.2/excalidraw-converter_1.5.2_darwin_arm64.tar.gz"
+      sha256 "821869ccac4ebc82a618d9e07c8b3bb0d0d7ccdbad05549e70d1e8a892a7acea"
 
       def install
         bin.install "exconv"
@@ -31,24 +31,24 @@ class ExcalidrawConverter < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.1/excalidraw-converter_1.5.1_linux_amd64.tar.gz"
-      sha256 "16ba3df5c9e3c4146615e633825a44dd633a4768f88d2de61c159be19b2f0d08"
+      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.2/excalidraw-converter_1.5.2_linux_amd64.tar.gz"
+      sha256 "b8f5a5636eaf32be09467bdbd551ae082094d163e117870e3fbf478d2fd4074a"
       def install
         bin.install "exconv"
         bin.install_symlink "#{bin}/exconv" => "excalidraw-converter"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.1/excalidraw-converter_1.5.1_linux_armv6.tar.gz"
-      sha256 "8162cdc12d57630629b8aa8d35189846e4e7e5f7a50ac2f87b8712208f1c00e2"
+      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.2/excalidraw-converter_1.5.2_linux_armv6.tar.gz"
+      sha256 "334fbd680dac4a0e9b968a8d42abae8de1d421b250cc314d5eb77f744c6c3998"
       def install
         bin.install "exconv"
         bin.install_symlink "#{bin}/exconv" => "excalidraw-converter"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.1/excalidraw-converter_1.5.1_linux_arm64.tar.gz"
-      sha256 "fec4755d474d56fd97f4b706a9accb57d130aa1fa1757ee2f2f48d2ab9fa45ef"
+      url "https://github.com/sindrel/excalidraw-converter/releases/download/v1.5.2/excalidraw-converter_1.5.2_linux_arm64.tar.gz"
+      sha256 "1b8730f4463e7f5893eed915718c66b384305ac8d7befb1ad30e57c60b615821"
       def install
         bin.install "exconv"
         bin.install_symlink "#{bin}/exconv" => "excalidraw-converter"
